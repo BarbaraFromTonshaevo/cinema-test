@@ -1,13 +1,9 @@
 import { defineStore } from 'pinia'
-import type { Genre } from '@/types/genre'
+import type { Genre } from '@/types/metadata/genre'
 
 export const useGenreStore = defineStore('genres', () => {
-  /** 
-   * oid → entity
-   * genre:6 → { oid, name }
-   */
+  
   const genres = reactive<Record<string, Genre>>({})
-
   const loaded = ref(false)
   const loading = ref(false)
 

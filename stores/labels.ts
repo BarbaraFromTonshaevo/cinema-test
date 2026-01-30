@@ -1,13 +1,9 @@
 import { defineStore } from 'pinia'
-import type { Label } from '@/types/label'
+import type { Label } from '@/types/metadata/label'
 
 export const useLabelStore = defineStore('labels', () => {
-  /** 
-   * oid → entity
-   * genre:6 → { oid, name }
-   */
+  
   const labels = reactive<Record<string, Label>>({})
-
   const loaded = ref(false)
   const loading = ref(false)
 
