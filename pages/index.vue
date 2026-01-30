@@ -1,7 +1,13 @@
 <template>
-    <div>
-        <h1>{{ data?.title }}</h1>
-        <CardBanner v-for="banner of data?.banners" :key="banner.oid" :banner="banner"/>
+    <div class="container mx-auto py-10 px-10 md:px-0">
+        <h1 class="text-2xl font-bold mb-10 uppercase">{{ data?.title }}</h1>
+        <div class="grid grid-cols gap-5 xl:grid-cols-3 md:grid-cols-2">
+            <CardBanner 
+                v-for="banner of data?.banners" 
+                :key="banner.oid" 
+                :banner="banner"
+            />
+        </div>
     </div>
 </template>
 

@@ -15,7 +15,7 @@ export function mapMainPage(dto: any): MainPage {
             oid: slide.oid,
             title: slide.title?.title ?? '',
             description: slide.title?.synopsis ?? '',
-            image: slide.title.assets,
+            image: slide.title.assets[0],
             genres: slide.title.genres
                 .map(oid => getGenre(oid))
                 .filter(Boolean),
