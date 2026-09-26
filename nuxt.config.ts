@@ -10,5 +10,16 @@ export default defineNuxtConfig({
   ],
   alias: {
     '@contracts': '~/types',
+  },
+  runtimeConfig: {
+    public: {
+      apiBase: 'https://cms.test.ksfr.tech/api/v1/',
+      apiSnapshot: false,
+      apiTimeout: 3000
+    }
+  },
+  image: {
+    // картинки уже ресайзит CDN стенда (шаблон {w}x{h} в resize_url)
+    provider: 'none'
   }
 })

@@ -1,0 +1,100 @@
+[
+  {
+    "oid": "label:4",
+    "name": "Новинка",
+    "left_color": "#961CC7",
+    "center_color": "#7015CB",
+    "right_color": "#0000C9"
+  },
+  {
+    "oid": "label:5",
+    "name": "Новые серии",
+    "left_color": "#961CC7",
+    "center_color": "#7015CB",
+    "right_color": "#0000C9"
+  },
+  {
+    "oid": "label:9",
+    "name": "Премьера",
+    "left_color": "#429F0C",
+    "center_color": "#8FCB98",
+    "right_color": "#116A0B"
+  },
+  {
+    "oid": "label:2",
+    "name": "Новый сезон",
+    "left_color": "#0000C9",
+    "center_color": "#7015CB",
+    "right_color": "#961CC7"
+  },
+  {
+    "oid": "label:11",
+    "name": "Лекция онлайн",
+    "left_color": "#DEB9EE",
+    "center_color": "#DEB9EE",
+    "right_color": "#DEB9EE"
+  },
+  {
+    "oid": "label:13",
+    "name": "Лейбл",
+    "left_color": "#961CC7",
+    "center_color": "#7015CB",
+    "right_color": "#0000C9"
+  },
+  {
+    "oid": "label:15",
+    "name": "ЗВЕНЯЩЩАЯ ПОШЛОСТЬ",
+    "left_color": "#0AB3C7",
+    "center_color": "#4264CB",
+    "right_color": "#1C19C9"
+  },
+  {
+    "oid": "label:16",
+    "name": "НЕОНОВЫЙ Неон НАЗВАНИЕ ДЛИННОЕ",
+    "left_color": "#29F75C",
+    "center_color": "#5ACB46",
+    "right_color": "#2C4A1A"
+  },
+  {
+    "oid": "label:17",
+    "name": "туц",
+    "left_color": "#FF44EE",
+    "center_color": "#FF54F4",
+    "right_color": "#6A43C9"
+  },
+  {
+    "oid": "label:18",
+    "name": "Желтый",
+    "left_color": "#C7B739",
+    "center_color": "#FFF44A",
+    "right_color": "#C99D64"
+  },
+  {
+    "oid": "label:20",
+    "name": "неоновый неон уже занят так что пупупу",
+    "left_color": "#2AEAE5",
+    "center_color": "#30FF2C",
+    "right_color": "#FF32F2"
+  },
+  {
+    "oid": "label:10",
+    "name": "Яркие цвета",
+    "left_color": "#93FFD2",
+    "center_color": "#FF7DBE",
+    "right_color": "#FFF3D1"
+  },
+  {
+    "oid": "label:3",
+    "name": "Скоро",
+    "left_color": "#0D17C7",
+    "center_color": "#2375FF",
+    "right_color": "#1036FF"
+  },
+  {
+    "oid": "label:21",
+    "name": "ТРАНСЛЯЦИЯ",
+    "left_color": "#328D12",
+    "center_color": "#9EF235",
+    "right_color": "#F4BD2D"
+  }
+]

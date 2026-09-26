@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import type { Genre } from '@/types/metadata/genre'
+import { fetchApi } from '@/services/api'
 
 export const useGenreStore = defineStore('genres', () => {
   
@@ -12,9 +13,7 @@ export const useGenreStore = defineStore('genres', () => {
 
     loading.value = true
 
-    const data = await $fetch<Genre[]>(
-      'https://cms.test.ksfr.tech/api/v1/metadata/genres/'
-    )
+    const data = await fetchApi<Genre[]>('metadata/genres/')
 
     for (const genre of data) {
       genres[genre.oid] = genre

@@ -1,0 +1,1609 @@
+{
+  "oid": "showcase:5",
+  "name": "Главная Витрина",
+  "slides": [
+    {
+      "oid": "contentbanner:15",
+      "title": {
+        "oid": "movie:M7w4ayWBQrGJ-Kj8XgkcXw",
+        "title": "Африка",
+        "synopsis": "1943 год. На окраине блокадного Ленинграда, сыновья отправляются в дорогу сами и оказываются перед недетским выбором — спасти семью или собаку, которую они находят на месте боя",
+        "age": 6,
+        "genres": [
+          "genre:2",
+          "genre:10"
+        ],
+        "labels": [
+          "label:4",
+          "label:9",
+          "label:10"
+        ],
+        "assets": [
+          {
+            "oid": "asset:47",
+            "asset_type": "Screenshot",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/M7w4ayWBQrGJ-Kj8XgkcXw/41b4fab8497b40ad9d354d10fcb85010.png"
+          },
+          {
+            "oid": "asset:13",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/M7w4ayWBQrGJ-Kj8XgkcXw/bd0b889648614ba386ee44da7243e07f.jpg"
+          },
+          {
+            "oid": "asset:7",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-7.webp"
+          }
+        ],
+        "url": "/content/movies/M7w4ayWBQrGJ-Kj8XgkcXw/",
+        "air_year": 2022,
+        "end_year": null
+      },
+      "trailer": {
+        "oid": "trailer:wsW_ZTzBTNuaJew4gG7BQA",
+        "versions": [
+          {
+            "oid": "version:14",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/thumbs.vtt",
+            "duration": "00:00:52.800000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/M7w4ayWBQrGJ-Kj8XgkcXw/?trailer_id=wsW_ZTzBTNuaJew4gG7BQA"
+      },
+      "preview": {
+        "oid": "movie:M7w4ayWBQrGJ-Kj8XgkcXw",
+        "versions": [
+          {
+            "oid": "version:11",
+            "age": 6,
+            "playback_url": "https://v.test.ksfr.tech/eff5bef84deb431b89ee52fc46c96ed4/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/eff5bef84deb431b89ee52fc46c96ed4/thumbs.vtt",
+            "duration": "00:48:53.480000",
+            "timecodes": [
+              {
+                "offset": "00:00:00",
+                "duration": "00:00:17",
+                "end": "0:00:17",
+                "title": "Таймкод 1",
+                "kind": "opening"
+              },
+              {
+                "offset": "00:04:59",
+                "duration": "00:04:42",
+                "end": "0:09:41",
+                "title": "Таймкод 2",
+                "kind": "content"
+              },
+              {
+                "offset": "00:09:41",
+                "duration": "00:04:42",
+                "end": "0:14:23",
+                "title": "Таймкод 3",
+                "kind": "content"
+              },
+              {
+                "offset": "00:14:23",
+                "duration": "00:04:42",
+                "end": "0:19:05",
+                "title": "Таймкод 4",
+                "kind": "content"
+              },
+              {
+                "offset": "00:19:05",
+                "duration": "00:04:42",
+                "end": "0:23:47",
+                "title": "Таймкод 5",
+                "kind": "content"
+              },
+              {
+                "offset": "00:23:47",
+                "duration": "00:04:42",
+                "end": "0:28:29",
+                "title": "Таймкод 6",
+                "kind": "content"
+              },
+              {
+                "offset": "00:28:29",
+                "duration": "00:04:42",
+                "end": "0:33:11",
+                "title": "Таймкод 7",
+                "kind": "content"
+              },
+              {
+                "offset": "00:33:11",
+                "duration": "00:04:42",
+                "end": "0:37:53",
+                "title": "Таймкод 8",
+                "kind": "content"
+              },
+              {
+                "offset": "00:37:53",
+                "duration": "00:04:42",
+                "end": "0:42:35",
+                "title": "Таймкод 9",
+                "kind": "content"
+              },
+              {
+                "offset": "00:42:35",
+                "duration": "00:06:04",
+                "end": "0:48:39",
+                "title": "Таймкод 10 подлинее на максиму",
+                "kind": "content"
+              },
+              {
+                "offset": "00:48:39",
+                "duration": "00:00:14.480000",
+                "end": "0:48:53.480000",
+                "title": "Таймкод 11",
+                "kind": "credits"
+              }
+            ]
+          },
+          {
+            "oid": "version:122",
+            "age": 12,
+            "playback_url": "https://v.test.ksfr.tech/7afa6c754c11437ba641371c419f6ade/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/7afa6c754c11437ba641371c419f6ade/thumbs.vtt",
+            "duration": "00:00:20",
+            "timecodes": [
+              {
+                "offset": "00:00:05",
+                "duration": "00:00:13",
+                "end": "0:00:18",
+                "title": "ОДИН ТАЙМКОД НА ВЕСЬ РОЛИККККК",
+                "kind": "content"
+              }
+            ]
+          },
+          {
+            "oid": "version:131",
+            "age": 16,
+            "playback_url": "https://v.test.ksfr.tech/3a979cfbca2f4fb08f873a1ac07fe41e/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/3a979cfbca2f4fb08f873a1ac07fe41e/thumbs.vtt",
+            "duration": "01:04:11",
+            "timecodes": [
+              {
+                "offset": "00:00:00",
+                "duration": "00:00:17",
+                "end": "0:00:17",
+                "title": "Таймкод очень часто в середине",
+                "kind": "opening"
+              },
+              {
+                "offset": "00:00:19",
+                "duration": "00:00:01",
+                "end": "0:00:20",
+                "title": "2",
+                "kind": "opening"
+              },
+              {
+                "offset": "00:00:20",
+                "duration": "00:00:01",
+                "end": "0:00:21",
+                "title": "3",
+                "kind": "credits"
+              },
+              {
+                "offset": "00:00:21",
+                "duration": "00:00:01",
+                "end": "0:00:22",
+                "title": "4",
+                "kind": "opening"
+              },
+              {
+                "offset": "00:00:22",
+                "duration": "00:00:01",
+                "end": "0:00:23",
+                "title": "5",
+                "kind": "credits"
+              },
+              {
+                "offset": "00:00:23",
+                "duration": "00:00:01",
+                "end": "0:00:24",
+                "title": "6",
+                "kind": "opening"
+              },
+              {
+                "offset": "00:00:24",
+                "duration": "00:00:01",
+                "end": "0:00:25",
+                "title": "7",
+                "kind": "credits"
+              },
+              {
+                "offset": "00:00:25",
+                "duration": "00:00:01",
+                "end": "0:00:26",
+                "title": "8",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:26",
+                "duration": "00:00:01",
+                "end": "0:00:27",
+                "title": "9",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:27",
+                "duration": "00:00:01",
+                "end": "0:00:28",
+                "title": "!\"№%:,.;_",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:28",
+                "duration": "00:00:01",
+                "end": "0:00:29",
+                "title": "11",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:29",
+                "duration": "00:00:01",
+                "end": "0:00:30",
+                "title": "12",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:30",
+                "duration": "00:00:01",
+                "end": "0:00:31",
+                "title": "13",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:31",
+                "duration": "00:00:01",
+                "end": "0:00:32",
+                "title": "14",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:32",
+                "duration": "00:00:01",
+                "end": "0:00:33",
+                "title": "15",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:33",
+                "duration": "00:00:01",
+                "end": "0:00:34",
+                "title": "16",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:34",
+                "duration": "00:00:01",
+                "end": "0:00:35",
+                "title": "17",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:35",
+                "duration": "00:00:01",
+                "end": "0:00:36",
+                "title": "18",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:36",
+                "duration": "00:00:01",
+                "end": "0:00:37",
+                "title": "19",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:37",
+                "duration": "00:00:01",
+                "end": "0:00:38",
+                "title": "20",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:38",
+                "duration": "00:00:01",
+                "end": "0:00:39",
+                "title": "21",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:39",
+                "duration": "00:00:01",
+                "end": "0:00:40",
+                "title": "22",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:40",
+                "duration": "00:00:01",
+                "end": "0:00:41",
+                "title": "23",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:41",
+                "duration": "00:00:01",
+                "end": "0:00:42",
+                "title": "24",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:42",
+                "duration": "00:00:01",
+                "end": "0:00:43",
+                "title": "25",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:43",
+                "duration": "00:00:01",
+                "end": "0:00:44",
+                "title": "26",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:44",
+                "duration": "00:00:01",
+                "end": "0:00:45",
+                "title": "27",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:45",
+                "duration": "00:00:01",
+                "end": "0:00:46",
+                "title": "28",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:46",
+                "duration": "00:00:01",
+                "end": "0:00:47",
+                "title": "29",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:47",
+                "duration": "00:00:01",
+                "end": "0:00:48",
+                "title": "30",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:48",
+                "duration": "00:00:01",
+                "end": "0:00:49",
+                "title": "31",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:49",
+                "duration": "00:00:01",
+                "end": "0:00:50",
+                "title": "32",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:50",
+                "duration": "00:00:01",
+                "end": "0:00:51",
+                "title": "33",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:51",
+                "duration": "00:00:01",
+                "end": "0:00:52",
+                "title": "34",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:52",
+                "duration": "00:00:01",
+                "end": "0:00:53",
+                "title": "35",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:53",
+                "duration": "00:00:01",
+                "end": "0:00:54",
+                "title": "36",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:54",
+                "duration": "00:00:01",
+                "end": "0:00:55",
+                "title": "37",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:55",
+                "duration": "00:00:01",
+                "end": "0:00:56",
+                "title": "38",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:56",
+                "duration": "00:00:01",
+                "end": "0:00:57",
+                "title": "39",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:57",
+                "duration": "00:00:01",
+                "end": "0:00:58",
+                "title": "40",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:58",
+                "duration": "00:00:01",
+                "end": "0:00:59",
+                "title": "41",
+                "kind": "content"
+              },
+              {
+                "offset": "00:00:59",
+                "duration": "00:00:41",
+                "end": "0:01:40",
+                "title": "42",
+                "kind": "content"
+              },
+              {
+                "offset": "00:01:40",
+                "duration": "00:31:40",
+                "end": "0:33:20",
+                "title": "43",
+                "kind": "content"
+              },
+              {
+                "offset": "00:33:20",
+                "duration": "00:30:51",
+                "end": "1:04:11",
+                "title": "ТИТРЫ ФИНАЛ",
+                "kind": "credits"
+              }
+            ]
+          }
+        ],
+        "url": "/content/movies/M7w4ayWBQrGJ-Kj8XgkcXw/"
+      },
+      "live_banners": {
+        "horiz": {
+          "oid": "trailer:wsW_ZTzBTNuaJew4gG7BQA",
+          "versions": [
+            {
+              "oid": "version:14",
+              "age": 0,
+              "playback_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/index.m3u8",
+              "preview_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/thumbs.vtt",
+              "duration": "00:00:52.800000",
+              "timecodes": []
+            }
+          ],
+          "url": "/content/movies/M7w4ayWBQrGJ-Kj8XgkcXw/?trailer_id=wsW_ZTzBTNuaJew4gG7BQA"
+        },
+        "vert": {
+          "oid": "trailer:iyOEFZX8SaewmSp-cZ4rzg",
+          "versions": [
+            {
+              "oid": "version:126",
+              "age": 0,
+              "playback_url": "https://v.test.ksfr.tech/8e2866c1c3d842fd8024559fe3aabc96/index.m3u8",
+              "preview_url": "https://v.test.ksfr.tech/8e2866c1c3d842fd8024559fe3aabc96/thumbs.vtt",
+              "duration": "00:26:33.160000",
+              "timecodes": []
+            }
+          ],
+          "url": "/content/movies/M7w4ayWBQrGJ-Kj8XgkcXw/?trailer_id=iyOEFZX8SaewmSp-cZ4rzg"
+        }
+      }
+    },
+    {
+      "oid": "contentbanner:30",
+      "title": {
+        "oid": "series:eLuGo7H3SoyCt2XO4-036g",
+        "title": "Весь мир Россия",
+        "synopsis": "Откуда в Калмыкии пустыни и из какого дерева нельзя разводить костер в тайге? Документальный фильм о природных зонах России",
+        "age": 12,
+        "genres": [
+          "genre:7",
+          "genre:5",
+          "genre:6"
+        ],
+        "labels": [
+          "label:2",
+          "label:3"
+        ],
+        "assets": [
+          {
+            "oid": "asset:50",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/series/eLuGo7H3SoyCt2XO4-036g/86851441c21c4768929971c96a641462.png"
+          },
+          {
+            "oid": "asset:51",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-51.webp"
+          }
+        ],
+        "url": "/content/series/eLuGo7H3SoyCt2XO4-036g/",
+        "air_year": 2020,
+        "end_year": 2022
+      },
+      "trailer": {
+        "oid": "trailer:Q_yPkUOpQlCq_ta3YXfWKw",
+        "versions": [
+          {
+            "oid": "version:43",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/6e27bcc6820e442daa05583b838694d5/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/6e27bcc6820e442daa05583b838694d5/thumbs.vtt",
+            "duration": "00:00:41.680000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/eLuGo7H3SoyCt2XO4-036g/?trailer_id=Q_yPkUOpQlCq_ta3YXfWKw"
+      },
+      "preview": {
+        "oid": "episode:8rMrU6iTSRKb_MN1C39Pag",
+        "versions": [
+          {
+            "oid": "version:27",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/200b2a9572fa4c5d88b0b5162aebd0d9/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/200b2a9572fa4c5d88b0b5162aebd0d9/thumbs.vtt",
+            "duration": "00:51:52.160000",
+            "timecodes": [
+              {
+                "offset": "00:00:00",
+                "duration": "00:00:55",
+                "end": "0:00:55",
+                "title": "Таймкод",
+                "kind": "opening"
+              },
+              {
+                "offset": "00:00:55",
+                "duration": "00:03:10",
+                "end": "0:04:05",
+                "title": "Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:04:05",
+                "duration": "00:05:44",
+                "end": "0:09:49",
+                "title": "Таймкод 1Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:09:49",
+                "duration": "00:01:08",
+                "end": "0:10:57",
+                "title": "Таймкод 1Таймкод 1Таймкод 1Тай",
+                "kind": "content"
+              },
+              {
+                "offset": "00:10:57",
+                "duration": "00:01:51",
+                "end": "0:12:48",
+                "title": "Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:12:48",
+                "duration": "00:02:11",
+                "end": "0:14:59",
+                "title": "Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:14:59",
+                "duration": "00:06:29",
+                "end": "0:21:28",
+                "title": "Таймкод 1Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:21:28",
+                "duration": "00:04:16",
+                "end": "0:25:44",
+                "title": "Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:25:44",
+                "duration": "00:05:46",
+                "end": "0:31:30",
+                "title": "Таймкод 1Таймкод 1Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:31:30",
+                "duration": "00:02:07",
+                "end": "0:33:37",
+                "title": "Таймкод 1Таймкод 1Таймкод 1Тай",
+                "kind": "content"
+              },
+              {
+                "offset": "00:33:37",
+                "duration": "00:07:53",
+                "end": "0:41:30",
+                "title": "Таймкод 1",
+                "kind": "content"
+              },
+              {
+                "offset": "00:41:30",
+                "duration": "00:09:07",
+                "end": "0:50:37",
+                "title": "Таймкод 1",
+                "kind": "credits"
+              },
+              {
+                "offset": "00:50:37",
+                "duration": "00:01:15.160000",
+                "end": "0:51:52.160000",
+                "title": null,
+                "kind": "next"
+              }
+            ]
+          }
+        ],
+        "url": "/content/series/eLuGo7H3SoyCt2XO4-036g/8rMrU6iTSRKb_MN1C39Pag/?season=Rz3B93k7QWqNMz2hE5SIrQ"
+      },
+      "live_banners": {
+        "horiz": {
+          "oid": "trailer:Q_yPkUOpQlCq_ta3YXfWKw",
+          "versions": [
+            {
+              "oid": "version:43",
+              "age": 0,
+              "playback_url": "https://v.test.ksfr.tech/6e27bcc6820e442daa05583b838694d5/index.m3u8",
+              "preview_url": "https://v.test.ksfr.tech/6e27bcc6820e442daa05583b838694d5/thumbs.vtt",
+              "duration": "00:00:41.680000",
+              "timecodes": []
+            }
+          ],
+          "url": "/content/series/eLuGo7H3SoyCt2XO4-036g/?trailer_id=Q_yPkUOpQlCq_ta3YXfWKw"
+        },
+        "vert": {
+          "oid": "trailer:dkfxhrHqRT2DB8EPslQPAg",
+          "versions": [
+            {
+              "oid": "version:206",
+              "age": 0,
+              "playback_url": "https://v.test.ksfr.tech/675c4b0063334211937e294f99a15dc8/index.m3u8",
+              "preview_url": "https://v.test.ksfr.tech/675c4b0063334211937e294f99a15dc8/thumbs.vtt",
+              "duration": "00:00:18",
+              "timecodes": []
+            }
+          ],
+          "url": "/content/series/eLuGo7H3SoyCt2XO4-036g/?trailer_id=dkfxhrHqRT2DB8EPslQPAg"
+        }
+      }
+    },
+    {
+      "oid": "contentbanner:18",
+      "title": {
+        "oid": "movie:0iGn-R9XScKSg8e5-iTidA",
+        "title": "Музей Мирового океана",
+        "synopsis": "Как много вы знаете про мировой океан? Готовы окунуться в подводный мир с головой? Тогда смело начинайте просмотр!",
+        "age": 12,
+        "genres": [
+          "genre:5",
+          "genre:9",
+          "genre:6",
+          "genre:20",
+          "genre:7",
+          "genre:17"
+        ],
+        "labels": [],
+        "assets": [
+          {
+            "oid": "asset:29",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/0iGn-R9XScKSg8e5-iTidA/0171e251e0c04ddb85ed577f021f0d33.jpg"
+          },
+          {
+            "oid": "asset:111",
+            "asset_type": "Screenshot",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/0iGn-R9XScKSg8e5-iTidA/1dec37ba7bad45f8b73585c4cd27231e.png"
+          },
+          {
+            "oid": "asset:28",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-28.webp"
+          }
+        ],
+        "url": "/content/movies/0iGn-R9XScKSg8e5-iTidA/",
+        "air_year": 2022,
+        "end_year": null
+      },
+      "trailer": {
+        "oid": "trailer:_1Muv4OZTcGPErllUcnopQ",
+        "versions": [
+          {
+            "oid": "version:17",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/6e27bcc6820e442daa05583b838694d5/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/6e27bcc6820e442daa05583b838694d5/thumbs.vtt",
+            "duration": "00:00:41.680000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/0iGn-R9XScKSg8e5-iTidA/?trailer_id=_1Muv4OZTcGPErllUcnopQ"
+      },
+      "preview": {
+        "oid": "movie:0iGn-R9XScKSg8e5-iTidA",
+        "versions": [
+          {
+            "oid": "version:16",
+            "age": 12,
+            "playback_url": "https://v.test.ksfr.tech/b6b824eaa0e847cd8b575316bbf4e648/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/b6b824eaa0e847cd8b575316bbf4e648/thumbs.vtt",
+            "duration": "00:29:35.560000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/0iGn-R9XScKSg8e5-iTidA/"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:32",
+      "title": {
+        "oid": "series:1GLQnXnQQlCCCWighhM8kA",
+        "title": "Из России с любовью",
+        "synopsis": "Где живут последние язычники Европы и какой город называют родиной заката?",
+        "age": 12,
+        "genres": [
+          "genre:5",
+          "genre:7",
+          "genre:6"
+        ],
+        "labels": [],
+        "assets": [
+          {
+            "oid": "asset:83",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-83.webp"
+          },
+          {
+            "oid": "asset:82",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/series/1GLQnXnQQlCCCWighhM8kA/7287e491ea3b441bb309b9b72d8816c1.jpg"
+          }
+        ],
+        "url": "/content/series/1GLQnXnQQlCCCWighhM8kA/",
+        "air_year": 2022,
+        "end_year": null
+      },
+      "trailer": {
+        "oid": "trailer:SvgbRfe1Q5K1Z5ZhySTU-g",
+        "versions": [
+          {
+            "oid": "version:50",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/thumbs.vtt",
+            "duration": "00:00:52.800000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/1GLQnXnQQlCCCWighhM8kA/?trailer_id=SvgbRfe1Q5K1Z5ZhySTU-g"
+      },
+      "preview": {
+        "oid": "episode:RcIbQLJzTPSjM_zE0fPjiQ",
+        "versions": [
+          {
+            "oid": "version:44",
+            "age": 6,
+            "playback_url": "https://v.test.ksfr.tech/7bc7075cf19542a784755df4c69bb2b5/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/7bc7075cf19542a784755df4c69bb2b5/thumbs.vtt",
+            "duration": "00:28:37.880000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/1GLQnXnQQlCCCWighhM8kA/RcIbQLJzTPSjM_zE0fPjiQ/?season=7vzgmaW-T7SMluCXGC5P3g"
+      },
+      "live_banners": {
+        "horiz": {
+          "oid": "trailer:SvgbRfe1Q5K1Z5ZhySTU-g",
+          "versions": [
+            {
+              "oid": "version:50",
+              "age": 0,
+              "playback_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/index.m3u8",
+              "preview_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/thumbs.vtt",
+              "duration": "00:00:52.800000",
+              "timecodes": []
+            }
+          ],
+          "url": "/content/series/1GLQnXnQQlCCCWighhM8kA/?trailer_id=SvgbRfe1Q5K1Z5ZhySTU-g"
+        },
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:52",
+      "title": {
+        "oid": "series:m0cCwLDxS8WgaBlsma4yUg",
+        "title": "Фиксики",
+        "synopsis": "Крошечные человечки тайно чинят вещи и показываются только избранным. Анимационный хит о том, как все устроено",
+        "age": 0,
+        "genres": [
+          "genre:27",
+          "genre:29"
+        ],
+        "labels": [],
+        "assets": [
+          {
+            "oid": "asset:218",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-218.webp"
+          },
+          {
+            "oid": "asset:217",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/series/m0cCwLDxS8WgaBlsma4yUg/27d61b91646f44a1aa3060bfb56dc31c.jpg"
+          }
+        ],
+        "url": "/content/series/m0cCwLDxS8WgaBlsma4yUg/",
+        "air_year": 2010,
+        "end_year": null
+      },
+      "trailer": {
+        "oid": "trailer:PKw5YOgESE-rFU72srLZbA",
+        "versions": [
+          {
+            "oid": "version:115",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/thumbs.vtt",
+            "duration": "00:00:52.800000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/m0cCwLDxS8WgaBlsma4yUg/?trailer_id=PKw5YOgESE-rFU72srLZbA"
+      },
+      "preview": {
+        "oid": "episode:p_JHz1DvR2us84JXf-mpiw",
+        "versions": [
+          {
+            "oid": "version:94",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/4746ff1d6d36451c9af1c2814c2e05ab/thumbs.vtt",
+            "duration": "00:00:52.800000",
+            "timecodes": [
+              {
+                "offset": "00:00:03",
+                "duration": "00:00:05",
+                "end": "0:00:08",
+                "title": "preview",
+                "kind": "opening"
+              },
+              {
+                "offset": "00:00:10",
+                "duration": "00:00:05",
+                "end": "0:00:15",
+                "title": "content",
+                "kind": "content"
+              }
+            ]
+          }
+        ],
+        "url": "/content/series/m0cCwLDxS8WgaBlsma4yUg/p_JHz1DvR2us84JXf-mpiw/?season=F4yXMqTKSMuLM3KlD4uaoA"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:31",
+      "title": {
+        "oid": "series:D9haE988TZ-0HtBgXRsQ5g",
+        "title": "ДНК России",
+        "synopsis": "ДНК России - цикл видеороликов патриотического содержания, направленный на борьбу с фальсификацией истории",
+        "age": 12,
+        "genres": [
+          "genre:7",
+          "genre:19"
+        ],
+        "labels": [],
+        "assets": [
+          {
+            "oid": "asset:61",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/series/D9haE988TZ-0HtBgXRsQ5g/6ef12771c11e4597b6f94a540ef6a8bf.jpg"
+          },
+          {
+            "oid": "asset:62",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-62.webp"
+          }
+        ],
+        "url": "/content/series/D9haE988TZ-0HtBgXRsQ5g/",
+        "air_year": 2023,
+        "end_year": 2023
+      },
+      "trailer": {
+        "oid": "trailer:xsesSBgSRtaN261HHpyEGQ",
+        "versions": [
+          {
+            "oid": "version:40",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/b9761677e3fa4c7d95ecbd31ab4f081d/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/b9761677e3fa4c7d95ecbd31ab4f081d/thumbs.vtt",
+            "duration": "00:03:15",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/D9haE988TZ-0HtBgXRsQ5g/?trailer_id=xsesSBgSRtaN261HHpyEGQ"
+      },
+      "preview": {
+        "oid": "episode:fk_wU3orTMiXPsSWLCCOQQ",
+        "versions": [
+          {
+            "oid": "version:31",
+            "age": 12,
+            "playback_url": "https://v.test.ksfr.tech/5a15914810e34fdea88482a2b0bf1659/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/5a15914810e34fdea88482a2b0bf1659/thumbs.vtt",
+            "duration": "00:26:31.040000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/D9haE988TZ-0HtBgXRsQ5g/fk_wU3orTMiXPsSWLCCOQQ/?season=vs48w9s1SmK45lnB6GHCuw"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:84",
+      "title": {
+        "oid": "movie:3PgRtJwITZe-wbloWDptKQ",
+        "title": "Плавучий университет. Флора и фауна Арктики",
+        "synopsis": "Круиз на научно-исследовательском судне «Профессор Молчанов» — это не просто безмятежный отдых и красивые пейзажи за окном",
+        "age": 12,
+        "genres": [
+          "genre:5",
+          "genre:6",
+          "genre:9"
+        ],
+        "labels": [
+          "label:11"
+        ],
+        "assets": [
+          {
+            "oid": "asset:5",
+            "asset_type": "Screenshot",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/3PgRtJwITZe-wbloWDptKQ/c41bc27918714b89801bf2af11c6221c.png"
+          },
+          {
+            "oid": "asset:6",
+            "asset_type": "Screenshot",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/3PgRtJwITZe-wbloWDptKQ/870ef1efe733486fb9f373f533c40a08.png"
+          },
+          {
+            "oid": "asset:3",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/3PgRtJwITZe-wbloWDptKQ/573bff18cc894addbb5bb8621ea8c812.jpg"
+          },
+          {
+            "oid": "asset:2",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-2.webp"
+          }
+        ],
+        "url": "/content/movies/3PgRtJwITZe-wbloWDptKQ/",
+        "air_year": 2022,
+        "end_year": null
+      },
+      "trailer": {
+        "oid": "trailer:FXPeKNytRsGEiP-EWR6p6Q",
+        "versions": [
+          {
+            "oid": "version:12",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/d2eb05db9d3648e6bf5f5c51691ea212/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/d2eb05db9d3648e6bf5f5c51691ea212/thumbs.vtt",
+            "duration": "00:00:40.280000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/3PgRtJwITZe-wbloWDptKQ/?trailer_id=FXPeKNytRsGEiP-EWR6p6Q"
+      },
+      "preview": {
+        "oid": "movie:3PgRtJwITZe-wbloWDptKQ",
+        "versions": [
+          {
+            "oid": "version:57",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/a969dce88ed1419c9297337a226efa88/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/a969dce88ed1419c9297337a226efa88/thumbs.vtt",
+            "duration": "00:52:03.760000",
+            "timecodes": []
+          },
+          {
+            "oid": "version:10",
+            "age": 6,
+            "playback_url": "https://v.test.ksfr.tech/f2b9238b90d94e54af1b712bc3834f30/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/f2b9238b90d94e54af1b712bc3834f30/thumbs.vtt",
+            "duration": "00:14:54.400000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/3PgRtJwITZe-wbloWDptKQ/"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:50",
+      "title": {
+        "oid": "series:cWmxnKOkShKdeu7ZHO8JSw",
+        "title": "Рассказы из русской истории. ХVIII век",
+        "synopsis": "Курс лекций «Рассказы о русской истории» посвящен XVIII веку в истории России, времени становления Российской империи",
+        "age": 12,
+        "genres": [
+          "genre:9",
+          "genre:21",
+          "genre:22"
+        ],
+        "labels": [
+          "label:9",
+          "label:3"
+        ],
+        "assets": [
+          {
+            "oid": "asset:200",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-200.webp"
+          },
+          {
+            "oid": "asset:199",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/series/cWmxnKOkShKdeu7ZHO8JSw/bba129d5ef394e92901bdb25f981d3f7.jpg"
+          }
+        ],
+        "url": "/content/series/cWmxnKOkShKdeu7ZHO8JSw/",
+        "air_year": 2022,
+        "end_year": null
+      },
+      "trailer": null,
+      "preview": {
+        "oid": "episode:9R3UM4vnQ-GApl4voqhUMg",
+        "versions": [
+          {
+            "oid": "version:79",
+            "age": 12,
+            "playback_url": "https://v.test.ksfr.tech/3a979cfbca2f4fb08f873a1ac07fe41e/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/3a979cfbca2f4fb08f873a1ac07fe41e/thumbs.vtt",
+            "duration": "01:04:11",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/cWmxnKOkShKdeu7ZHO8JSw/9R3UM4vnQ-GApl4voqhUMg/?season=Q3UVfWPmRRuWoY2714-qRw"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:77",
+      "title": {
+        "oid": "movie:62hIUJkxRsSzYmWK0dULqA",
+        "title": "Закрытие Всероссийских спортивных игр школьников. ПРЕЗИДЕНТСКИЕ СПОРТИВНЫЕ ИГРЫ",
+        "synopsis": "Смотрите прямую трансляцию «Смена» — уникальный показ в прямом эфире. Подключайтесь вовремя, чтобы не пропустить ключевые моменты",
+        "age": 0,
+        "genres": [
+          "genre:25"
+        ],
+        "labels": [],
+        "assets": [
+          {
+            "oid": "asset:388",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-388.webp"
+          },
+          {
+            "oid": "asset:389",
+            "asset_type": "Screenshot",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/62hIUJkxRsSzYmWK0dULqA/a5056890eb63429fbdacc2b5a580653b.png"
+          },
+          {
+            "oid": "asset:390",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/62hIUJkxRsSzYmWK0dULqA/53eaf111502b42d2b669e8d19b97bbb4.jpg"
+          }
+        ],
+        "url": "/content/movies/62hIUJkxRsSzYmWK0dULqA/",
+        "air_year": 2025,
+        "end_year": null
+      },
+      "trailer": null,
+      "preview": {
+        "oid": "movie:62hIUJkxRsSzYmWK0dULqA",
+        "versions": [
+          {
+            "oid": "version:190",
+            "age": 0,
+            "playback_url": "https://vcood5plrcz.a.trbcdn.net/livemaster/6e4c2_dfbjuebwjq.smil/playlist.m3u8",
+            "preview_url": null,
+            "duration": null,
+            "timecodes": []
+          },
+          {
+            "oid": "version:201",
+            "age": 6,
+            "playback_url": "https://v.test.ksfr.tech/6262b1198a1c433c89465ee1f9832963/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/6262b1198a1c433c89465ee1f9832963/thumbs.vtt",
+            "duration": "00:00:18.048000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/62hIUJkxRsSzYmWK0dULqA/"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:78",
+      "title": {
+        "oid": "movie:RIcI__UwRnymqovNWbC29w",
+        "title": "Волчишко",
+        "synopsis": "Скучающий рыбак забирает из леса любознательного волчонка. Душевная рисованная анимация о тоске по дому.",
+        "age": 0,
+        "genres": [
+          "genre:9"
+        ],
+        "labels": [],
+        "assets": [
+          {
+            "oid": "asset:448",
+            "asset_type": "Screenshot",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/RIcI__UwRnymqovNWbC29w/9adfc34cc57546be97ee5dc95cf0d00d.png"
+          },
+          {
+            "oid": "asset:449",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-449.webp"
+          },
+          {
+            "oid": "asset:450",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/RIcI__UwRnymqovNWbC29w/b7298a98be1b4df1b738668955f7be44.png"
+          }
+        ],
+        "url": "/content/movies/RIcI__UwRnymqovNWbC29w/",
+        "air_year": 1993,
+        "end_year": null
+      },
+      "trailer": null,
+      "preview": {
+        "oid": "movie:RIcI__UwRnymqovNWbC29w",
+        "versions": [
+          {
+            "oid": "version:226",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/b9761677e3fa4c7d95ecbd31ab4f081d/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/b9761677e3fa4c7d95ecbd31ab4f081d/thumbs.vtt",
+            "duration": "00:03:15",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/RIcI__UwRnymqovNWbC29w/"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:85",
+      "title": {
+        "oid": "movie:Frnjp-hCSo6ce9cKBNZnsg",
+        "title": "Сделано русскими с превью и тегами",
+        "synopsis": "Сделано русскими с превью и тегами\r\nСделано русскими с превью и тегами\r\nСделано русскими с превью и тегами\r\nСделано русскими с превью и тегами\r\nСделано русскими с превью и тегами\r\nСделано русскими с превью и тегами Сделано русскими с превью и тегами Сделано русскими с превью и тегами\r\nСделано русскими с превью и тегами\r\nСделано русскими с превью и тегами",
+        "age": 6,
+        "genres": [
+          "genre:2",
+          "genre:5",
+          "genre:21"
+        ],
+        "labels": [
+          "label:20"
+        ],
+        "assets": [
+          {
+            "oid": "asset:416",
+            "asset_type": "Screenshot",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/Frnjp-hCSo6ce9cKBNZnsg/2c29e4ac11294269a9714f1066c91c12.jpg"
+          },
+          {
+            "oid": "asset:417",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-417.webp"
+          },
+          {
+            "oid": "asset:418",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/movie/Frnjp-hCSo6ce9cKBNZnsg/e97ae74029224b48939eb92dd9dbe410.jpg"
+          }
+        ],
+        "url": "/content/movies/Frnjp-hCSo6ce9cKBNZnsg/",
+        "air_year": 2004,
+        "end_year": null
+      },
+      "trailer": null,
+      "preview": {
+        "oid": "movie:Frnjp-hCSo6ce9cKBNZnsg",
+        "versions": [
+          {
+            "oid": "version:210",
+            "age": 6,
+            "playback_url": "https://v.test.ksfr.tech/1086064dd7d44b87b2a38e5e6690a393/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/1086064dd7d44b87b2a38e5e6690a393/thumbs.vtt",
+            "duration": "01:28:46.592000",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/movies/Frnjp-hCSo6ce9cKBNZnsg/"
+      },
+      "live_banners": {
+        "horiz": {
+          "oid": "movie:Frnjp-hCSo6ce9cKBNZnsg",
+          "versions": [
+            {
+              "oid": "version:210",
+              "age": 6,
+              "playback_url": "https://v.test.ksfr.tech/1086064dd7d44b87b2a38e5e6690a393/index.m3u8",
+              "preview_url": "https://v.test.ksfr.tech/1086064dd7d44b87b2a38e5e6690a393/thumbs.vtt",
+              "duration": "01:28:46.592000",
+              "timecodes": []
+            }
+          ],
+          "url": "/content/movies/Frnjp-hCSo6ce9cKBNZnsg/"
+        },
+        "vert": null
+      }
+    },
+    {
+      "oid": "contentbanner:55",
+      "title": {
+        "oid": "series:InFDk0BXRJa79ZwhPK18nA",
+        "title": "Эльбрус. Точка невозврата",
+        "synopsis": "Попытка покорить Эльбрус в непогоду стоила жизни пятерым туристам. Пронзительный док о причинах трагедии",
+        "age": 18,
+        "genres": [
+          "genre:5"
+        ],
+        "labels": [],
+        "assets": [
+          {
+            "oid": "asset:240",
+            "asset_type": "Banner",
+            "resize_url": "/snapshot/asset-240.webp"
+          },
+          {
+            "oid": "asset:239",
+            "asset_type": "Poster",
+            "resize_url": "https://i.test.ksfr.tech/media/cms/{w}x{h}/content/series/InFDk0BXRJa79ZwhPK18nA/4c6ee07fa48944619da365eaee537a1b.jpg"
+          }
+        ],
+        "url": "/content/series/InFDk0BXRJa79ZwhPK18nA/",
+        "air_year": 2022,
+        "end_year": 2002
+      },
+      "trailer": {
+        "oid": "trailer:U4Dw7LGdTOGhMIBisIg98Q",
+        "versions": [
+          {
+            "oid": "version:113",
+            "age": 0,
+            "playback_url": "https://v.test.ksfr.tech/d0bd4183f4e14d939ac0168b360d8424/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/d0bd4183f4e14d939ac0168b360d8424/thumbs.vtt",
+            "duration": "00:00:16",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/InFDk0BXRJa79ZwhPK18nA/?trailer_id=U4Dw7LGdTOGhMIBisIg98Q"
+      },
+      "preview": {
+        "oid": "episode:S9Gt_05KRLyTn66LxqDUcg",
+        "versions": [
+          {
+            "oid": "version:104",
+            "age": 6,
+            "playback_url": "https://v.test.ksfr.tech/157c6f2abc844a64a4ed291976808570/index.m3u8",
+            "preview_url": "https://v.test.ksfr.tech/157c6f2abc844a64a4ed291976808570/thumbs.vtt",
+            "duration": "00:00:31",
+            "timecodes": []
+          }
+        ],
+        "url": "/content/series/InFDk0BXRJa79ZwhPK18nA/S9Gt_05KRLyTn66LxqDUcg/?season=z_MOaHBHSEy0PaIZFc-IkQ"
+      },
+      "live_banners": {
+        "horiz": null,
+        "vert": null
+      }
+    }
+  ],
+  "collections": [
+    {
+      "oid": "collection:45",
+      "name": "Самая огромная горизонтальная коллекция 85+",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "samaya-ogromnaya-gorizontal-kollekciya"
+    },
+    {
+      "oid": "collection:46",
+      "name": "Самая огромная вертикальная коллекция 55+",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "samaya-ogromnaya-vertikalnaya-kollekciya"
+    },
+    {
+      "oid": "collection:11",
+      "name": "Сериалы и шоу",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "serialy-i-shou"
+    },
+    {
+      "oid": "collection:20",
+      "name": "ФИЛЬМЫ",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "filmy"
+    },
+    {
+      "oid": "collection:16",
+      "name": "Авторский курс Владимира Мединского",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "avtorskij-kurs-vladimira-medinskogo"
+    },
+    {
+      "oid": "collection:17",
+      "name": "Музыка",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "muzyka"
+    },
+    {
+      "oid": "collection:32",
+      "name": "Мультфильмы",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "multfilmy"
+    },
+    {
+      "oid": "collection:15",
+      "name": "Россия",
+      "kind": "horizontal",
+      "new_window": false,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "12-rossija"
+    },
+    {
+      "oid": "collection:39",
+      "name": "Шоу",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "shou"
+    },
+    {
+      "oid": "collection:43",
+      "name": "Горизонтальная",
+      "kind": "horizontal",
+      "new_window": false,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "gorizontalnaya"
+    },
+    {
+      "oid": "collection:31",
+      "name": "ВЕРТИКАЛЬНАЯ",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "vertikalnaja"
+    },
+    {
+      "oid": "collection:1",
+      "name": "Декская коллекция",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "dekskaja-kollektsija"
+    },
+    {
+      "oid": "collection:14",
+      "name": "Проекты",
+      "kind": "vertical",
+      "new_window": false,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "proekty"
+    },
+    {
+      "oid": "collection:48",
+      "name": "Драмы",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "dramy"
+    }
+  ],
+  "rows": [
+    {
+      "oid": "collection:45",
+      "name": "Самая огромная горизонтальная коллекция 85+",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "samaya-ogromnaya-gorizontal-kollekciya"
+    },
+    {
+      "oid": "collection:46",
+      "name": "Самая огромная вертикальная коллекция 55+",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "samaya-ogromnaya-vertikalnaya-kollekciya"
+    },
+    {
+      "oid": "collection:11",
+      "name": "Сериалы и шоу",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "serialy-i-shou"
+    },
+    {
+      "oid": "collection:20",
+      "name": "ФИЛЬМЫ",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "filmy"
+    },
+    {
+      "oid": "collection:16",
+      "name": "Авторский курс Владимира Мединского",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "avtorskij-kurs-vladimira-medinskogo"
+    },
+    {
+      "oid": "collection:17",
+      "name": "Музыка",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "muzyka"
+    },
+    {
+      "oid": "collection:32",
+      "name": "Мультфильмы",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "multfilmy"
+    },
+    {
+      "oid": "collection:15",
+      "name": "Россия",
+      "kind": "horizontal",
+      "new_window": false,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "12-rossija"
+    },
+    {
+      "oid": "collection:39",
+      "name": "Шоу",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "shou"
+    },
+    {
+      "oid": "collection:43",
+      "name": "Горизонтальная",
+      "kind": "horizontal",
+      "new_window": false,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "gorizontalnaya"
+    },
+    {
+      "oid": "collection:31",
+      "name": "ВЕРТИКАЛЬНАЯ",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "vertikalnaja"
+    },
+    {
+      "oid": "collection:1",
+      "name": "Декская коллекция",
+      "kind": "horizontal",
+      "new_window": true,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "dekskaja-kollektsija"
+    },
+    {
+      "oid": "collection:14",
+      "name": "Проекты",
+      "kind": "vertical",
+      "new_window": false,
+      "substrate": true,
+      "update_banner_on_focus": true,
+      "slug": "proekty"
+    },
+    {
+      "oid": "collection:48",
+      "name": "Драмы",
+      "kind": "vertical",
+      "new_window": true,
+      "substrate": false,
+      "update_banner_on_focus": true,
+      "slug": "dramy"
+    }
+  ]
+}

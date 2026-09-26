@@ -13,9 +13,10 @@
 
 <script setup lang="ts">
 import { mapMainPage } from '@/services/mappers/main-page.mapper';
+import { fetchApi } from '@/services/api';
 
 const { data } = await useAsyncData('maindata', async () => {
-    const raw = await $fetch('https://cms.test.ksfr.tech/api/v1/showcases/showcases/mainpage/web/')
+    const raw = await fetchApi('showcases/showcases/mainpage/web/')
     return mapMainPage(raw)
 })
 </script>

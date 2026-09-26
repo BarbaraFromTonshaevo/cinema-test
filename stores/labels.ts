@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import type { Label } from '@/types/metadata/label'
+import { fetchApi } from '@/services/api'
 
 export const useLabelStore = defineStore('labels', () => {
   
@@ -12,9 +13,7 @@ export const useLabelStore = defineStore('labels', () => {
 
     loading.value = true
 
-    const data = await $fetch<Label[]>(
-      'https://cms.test.ksfr.tech/api/v1/metadata/labels'
-    )
+    const data = await fetchApi<Label[]>('metadata/labels/')
 
     for (const label of data) {
       labels[label.oid] = label
