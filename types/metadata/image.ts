@@ -1,5 +1,5 @@
 export interface Image{
     oid: string
-    assets_type: string,
+    asset_type: string,
     resize_url: string
 }
