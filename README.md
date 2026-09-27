@@ -1,132 +1,134 @@
-# cinema-test — витрина онлайн-кинотеатра на Nuxt 3
+# cinema-test — online cinema showcase on Nuxt 3
 
-Главная страница онлайн-кинотеатра: сетка карточек с названием, описанием, картинкой, жанрами и метками. Данные приходят из CMS-API, ссылки на справочники (`genre:6`, `label:4`) заменяются самими объектами. Nuxt 3, TypeScript, Pinia, Tailwind CSS, SSR.
+**English** | [Русский](README.ru.md)
 
-**Демо:** https://cinema-test-chi.vercel.app/
+The home page of an online cinema: a grid of cards with a title, description, image, genres and labels. Data comes from a CMS API, and references to lookup tables (`genre:6`, `label:4`) are replaced with the objects themselves. Nuxt 3, TypeScript, Pinia, Tailwind CSS, SSR.
+
+**Live demo:** https://cinema-test-chi.vercel.app/
 
 <p>
-  <img src="./screenshots/desktop-1440.webp" alt="Главная витрина на десктопе, 1440 px" width="68%">
-  <img src="./screenshots/mobile-390.webp" alt="Главная витрина на мобильном, 390 px" width="24%">
+  <img src="./screenshots/desktop-1440.webp" alt="Showcase on desktop, 1440 px" width="68%">
+  <img src="./screenshots/mobile-390.webp" alt="Showcase on mobile, 390 px" width="24%">
 </p>
 
-## Контекст
+## Context
 
-Это тестовое задание компании **Джаст Ворк** на позицию фронтенд-разработчика. ТЗ пришло 23 января 2026 года, собеседование было 30 января. Исходное решение — первые четыре коммита репозитория (28–30 января).
+This is a take-home test task from **Just Work** for a front-end developer position. I received the brief on January 23, 2026, and the interview was scheduled for January 30. The original solution is the first four commits of this repository (January 28–30).
 
-Задание («Задача 3»):
+The brief ("Task 3"):
 
-- создать проект на Nuxt 3 + Pinia и вывести данные витрины из `https://cms.test.ksfr.tech/api/v1/showcases/showcases/mainpage/web/`;
-- ссылки на другие объекты вида `"genre:6"` (не только жанры) заменить самими объектами из справочников API ([swagger](https://cms.test.ksfr.tech/api/swagger/));
-- вывести название, описание, картинку, список жанров и список меток;
-- оформить сеткой карточек, адаптивной для мобильного и десктопа;
-- решение «production-уровня», как старт проекта большого кинотеатра: для всех справочников, для любых страниц, в режимах SSR/SSG и SPA.
+- create a Nuxt 3 + Pinia project and render the showcase data from `https://cms.test.ksfr.tech/api/v1/showcases/showcases/mainpage/web/`;
+- replace references to other objects such as `"genre:6"` (not limited to genres) with the objects themselves, taken from the API lookup tables ([swagger](https://cms.test.ksfr.tech/api/swagger/));
+- show the title, description, image, list of genres and list of labels;
+- lay the items out as a grid of cards that adapts to mobile and desktop;
+- the solution should be "production-grade", as if it were the start of a large cinema project: it should work for all lookup tables, for any page, and in SSR/SSG and SPA modes.
 
-## Что сделано
+## Features
 
-- Главная страница с SSR: данные загружаются на сервере через `useAsyncData`, в браузер приходит готовый HTML.
-- Справочники жанров и меток загружаются один раз в сторы Pinia и хранятся как словарь `oid → объект`. Маппер заменяет ссылки в слайдах объектами и отбрасывает ссылки, которых нет в справочнике.
-- Ответ API и модель страницы разделены: отдельные типы DTO и доменные типы (`Banner`, `Genre`, `Label`, `MainPage`), `oid` типизированы шаблонными строками (`` `genre:${string}` ``).
-- Адаптивная сетка карточек на Tailwind: 1 колонка на мобильном, 2 на планшете, 3 на десктопе. Длинное описание обрезается до трёх строк.
+- Server-side rendered home page: data is loaded on the server with `useAsyncData`, so the browser receives ready HTML.
+- Genres and labels are loaded once into Pinia stores and kept as an `oid → object` dictionary. The mapper replaces references in the slides with these objects and drops references that are missing from the lookup table.
+- The API response and the page model are separated: dedicated DTO types and domain types (`Banner`, `Genre`, `Label`, `MainPage`), with `oid` values typed as template literal types (`` `genre:${string}` ``).
+- Responsive card grid in Tailwind: 1 column on mobile, 2 on tablet, 3 on desktop. Long descriptions are clamped to three lines.
 
-## Стек
+## Tech stack
 
-| Область | Инструменты |
+| Area | Tools |
 | --- | --- |
-| Фреймворк | Nuxt 3, Vue 3 (`<script setup>`), TypeScript |
-| Состояние | Pinia (setup-сторы) |
-| Стили | Tailwind CSS 3 (`@nuxtjs/tailwindcss`) |
-| Картинки | `@nuxt/image` |
-| Качество кода | ESLint (`@nuxt/eslint`) |
-| Хостинг | Vercel (SSR) |
+| Framework | Nuxt 3, Vue 3 (`<script setup>`), TypeScript |
+| State | Pinia (setup stores) |
+| Styles | Tailwind CSS 3 (`@nuxtjs/tailwindcss`) |
+| Images | `@nuxt/image` |
+| Code quality | ESLint (`@nuxt/eslint`) |
+| Hosting | Vercel (SSR) |
 
-## Архитектура
+## Architecture
 
 ```
-CMS API ──► services/api.ts ──► stores/genres.ts, stores/labels.ts   (справочники: oid → объект)
-   │         (фолбэк на                          │
+CMS API ──► services/api.ts ──► stores/genres.ts, stores/labels.ts   (lookup tables: oid → object)
+   │         (falls back to                      │
    │          data/snapshot/)                    ▼
    └──────► pages/index.vue ──► services/mappers/main-page.mapper.ts ──► components/card/banner.vue
-            useAsyncData          DTO → MainPage, ссылки → объекты         карточка в сетке
+            useAsyncData          DTO → MainPage, references → objects     card in the grid
 ```
 
-1. [app.vue](app.vue) при старте загружает справочники: `fetchGenres()` и `fetchLabels()`.
-2. Сторы [stores/genres.ts](stores/genres.ts) и [stores/labels.ts](stores/labels.ts) кладут их в словарь по `oid` и отдают через `getGenre(oid)` / `getLabel(oid)`. Флаги `loaded` / `loading` не дают загрузить справочник дважды, а состояние Pinia передаётся с сервера в браузер, поэтому на клиенте повторных запросов нет.
-3. [pages/index.vue](pages/index.vue) через `useAsyncData` запрашивает витрину и передаёт сырой ответ в маппер.
-4. [services/mappers/main-page.mapper.ts](services/mappers/main-page.mapper.ts) превращает `BannerDTO` в `Banner`: берёт название и синопсис, выбирает картинку и заменяет `oid` жанров и меток объектами из сторов.
-5. [components/card/banner.vue](components/card/banner.vue) рисует карточку по доменной модели и ничего не знает о формате API.
+1. [app.vue](app.vue) loads the lookup tables on startup: `fetchGenres()` and `fetchLabels()`.
+2. The stores [stores/genres.ts](stores/genres.ts) and [stores/labels.ts](stores/labels.ts) put them into a dictionary keyed by `oid` and expose `getGenre(oid)` / `getLabel(oid)`. The `loaded` / `loading` flags prevent loading a table twice, and the Pinia state is transferred from the server to the browser, so the client makes no repeat requests.
+3. [pages/index.vue](pages/index.vue) requests the showcase with `useAsyncData` and passes the raw response to the mapper.
+4. [services/mappers/main-page.mapper.ts](services/mappers/main-page.mapper.ts) turns each `BannerDTO` into a `Banner`: it takes the title and synopsis, picks the image and replaces genre and label `oid`s with objects from the stores.
+5. [components/card/banner.vue](components/card/banner.vue) renders a card from the domain model and knows nothing about the API format.
 
-Все запросы идут через [services/api.ts](services/api.ts) (см. следующий раздел).
+All requests go through [services/api.ts](services/api.ts) (see the next section).
 
-## Устойчивость демо: снапшот API
+## Keeping the demo alive: API snapshot
 
-API принадлежит тестовому стенду компании: он может отвечать нестабильно или исчезнуть совсем. Похожая история была в моём [vue2-project](https://github.com/BarbaraFromTonshaevo/vue2-project): учебное API там выключили, и я воспроизвела его контракт. Здесь я решила сделать страховку заранее.
+The API belongs to the company's test environment: it can respond unreliably or disappear altogether. Something similar happened in my [vue2-project](https://github.com/BarbaraFromTonshaevo/vue2-project), where the course API was shut down and I reproduced its contract. This time I added a safety net in advance.
 
-- В [data/snapshot/](data/snapshot/) лежат реальные ответы трёх эндпоинтов: `mainpage`, `genres`, `labels`. Картинки баннеров скачаны в [public/snapshot/](public/snapshot/) (webp, около 0,5 МБ), и в снапшоте `resize_url` указывает на них. Остальные поля совпадают с ответом API.
-- `fetchApi(path)` в [services/api.ts](services/api.ts) ходит в API с таймаутом. Если стенд не ответил или вернул ошибку, данные берутся из снапшота, а в лог сервера пишется предупреждение. Снапшот подгружается динамическим импортом, поэтому в основной бандл не попадает.
-- Флаг `NUXT_PUBLIC_API_SNAPSHOT=true` включает снапшот принудительно, без обращения к API.
-- Скрипт `npm run snapshot:update` заново снимает ответы и картинки, если стенд жив.
+- [data/snapshot/](data/snapshot/) holds real responses from the three endpoints: `mainpage`, `genres`, `labels`. Banner images are downloaded to [public/snapshot/](public/snapshot/) (webp, about 0.5 MB), and `resize_url` in the snapshot points to them. All other fields match the API response.
+- `fetchApi(path)` in [services/api.ts](services/api.ts) calls the API with a timeout. If the server does not respond or returns an error, the data comes from the snapshot and a warning is written to the server log. The snapshot is loaded with a dynamic import, so it does not end up in the main bundle.
+- The `NUXT_PUBLIC_API_SNAPSHOT=true` flag forces the snapshot without calling the API.
+- `npm run snapshot:update` captures the responses and images again while the server is up.
 
-Ещё одна причина для снапшота: API отдаёт CORS-заголовок только для `https://test.ksfr.tech`. Поэтому из браузера на другом домене (localhost, Vercel) запросы к нему блокируются. В SSR это не мешает, так как запросы делает сервер. А в SPA-режиме страницу с чужого домена показывает именно снапшот.
+There is one more reason for the snapshot: the API sends a CORS header only for `https://test.ksfr.tech`, so browsers on any other domain (localhost, Vercel) block requests to it. This does not affect SSR, because the server makes the requests. In SPA mode on another domain, though, the page is rendered from the snapshot.
 
-Проверено во всех трёх режимах из ТЗ: SSR (`nuxt build`), SSG (`nuxt generate`) и SPA (`ssr: false`). В каждом случае рендерятся все 12 карточек с картинками, в том числе когда API недоступно.
+Checked in all three modes from the brief: SSR (`nuxt build`), SSG (`nuxt generate`) and SPA (`ssr: false`). In each case all 12 cards render with images, including when the API is unavailable.
 
-## Ключевые решения
+## Key decisions
 
-- **DTO отдельно от модели страницы.** Компоненты работают с `Banner`, а не с ответом API. Если формат API поменяется, правится только маппер.
-- **Справочники нормализованы в Pinia.** Каждый справочник загружается один раз и хранится словарём по `oid`, поэтому замена ссылки на объект — это поиск по ключу, а не проход по массиву.
-- **Отдельный слой маппинга** (`services/mappers/`). Преобразование данных не смешивается с запросами и шаблонами.
-- **SSR через `useAsyncData`.** Страница приходит с данными, а состояние сторов переезжает на клиент через payload.
+- **DTOs separate from the page model.** Components work with `Banner`, not with the API response. If the API format changes, only the mapper needs updating.
+- **Lookup tables normalized in Pinia.** Each table is loaded once and stored as a dictionary keyed by `oid`, so resolving a reference is a key lookup rather than a search through an array.
+- **A separate mapping layer** (`services/mappers/`). Data transformation is kept apart from requests and templates.
+- **SSR with `useAsyncData`.** The page arrives with its data, and the store state moves to the client through the payload.
 
-## Исправлено после собеседования
+## Changed after the interview
 
-Я честно отмечаю, что изменила после 30 января, чтобы было видно, где исходное решение, а где доработка.
+I list everything I changed after January 30, so it is clear which parts are the original solution and which were added later.
 
-- **Картинки не выводились.** В карточке стоял несуществующий компонент `<NuxtImage>` вместо `<NuxtImg>`. Кроме того, `resize_url` в API — это шаблон с `{w}x{h}`, без подстановки размера сервер картинок отвечает ошибкой. Маппер теперь выбирает ассет типа `Banner` (раньше брался первый из списка, а там бывает скриншот или постер) и подставляет размер `800x450`. Заодно исправлено имя поля в типе: `asset_type` вместо `assets_type`.
-- **Снапшот API и фолбэк** (раздел выше), адрес API и таймаут вынесены в `runtimeConfig`.
-- Скрипты `lint`, `lint:fix` и `snapshot:update`, файл `.env.example`, этот README и скриншоты.
+- **Images were not displayed.** The card used a non-existent `<NuxtImage>` component instead of `<NuxtImg>`. On top of that, `resize_url` from the API is a template containing `{w}x{h}`, and without a size the image server returns an error. The mapper now picks the asset of type `Banner` (previously it took the first one, which could be a screenshot or a poster) and substitutes the size `800x450`. The field name in the type was fixed as well: `asset_type` instead of `assets_type`.
+- **API snapshot and fallback** (see the section above); the API URL and timeout moved to `runtimeConfig`.
+- The `lint`, `lint:fix` and `snapshot:update` scripts, `.env.example`, this README and the screenshots.
 
-## Запуск
+## Getting started
 
-Нужен Node.js 20+.
+Requires Node.js 20+.
 
 ```bash
 npm install
 npm run dev          # http://localhost:3000
 ```
 
-Другие скрипты:
+Other scripts:
 
 ```bash
-npm run build            # SSR-сборка в .output/
-npm run preview          # запуск собранного приложения
-npm run generate         # статическая генерация (SSG)
+npm run build            # SSR build into .output/
+npm run preview          # run the built app
+npm run generate         # static site generation (SSG)
 npm run lint             # ESLint
-npm run snapshot:update  # обновить снапшот API и картинок
+npm run snapshot:update  # refresh the API and image snapshot
 ```
 
-Переменные окружения необязательны, значения по умолчанию заданы в [nuxt.config.ts](nuxt.config.ts), пример лежит в [.env.example](.env.example):
+Environment variables are optional; defaults are set in [nuxt.config.ts](nuxt.config.ts), and an example is in [.env.example](.env.example):
 
-| Переменная | По умолчанию | Назначение |
+| Variable | Default | Purpose |
 | --- | --- | --- |
-| `NUXT_PUBLIC_API_BASE` | `https://cms.test.ksfr.tech/api/v1/` | базовый URL API |
-| `NUXT_PUBLIC_API_SNAPSHOT` | `false` | `true` — всегда брать данные из снапшота |
-| `NUXT_PUBLIC_API_TIMEOUT` | `3000` | сколько миллисекунд ждать API перед фолбэком |
+| `NUXT_PUBLIC_API_BASE` | `https://cms.test.ksfr.tech/api/v1/` | API base URL |
+| `NUXT_PUBLIC_API_SNAPSHOT` | `false` | `true` — always use the snapshot |
+| `NUXT_PUBLIC_API_TIMEOUT` | `3000` | how many milliseconds to wait for the API before falling back |
 
-## Демо
+## Deployment
 
-Приложение развёрнуто на Vercel в SSR-режиме (пресет Nitro для Vercel подключается автоматически). Сборка стандартная: `nuxt build`, без дополнительных настроек.
+The app is deployed on Vercel in SSR mode (the Nitro preset for Vercel is picked up automatically). The build is the standard `nuxt build` with no extra configuration.
 
-## Что бы улучшила при большем времени
+## What I would improve with more time
 
-ТЗ просило решение «для всех справочников и любых страниц». Сейчас оно работает для главной страницы и двух справочников, которые на ней встречаются. Вот что я бы сделала дальше:
+The brief asked for a solution that works "for all lookup tables and any page". Right now it works for the home page and the two lookup tables that appear on it. Here is what I would do next:
 
-- **Универсальный резолвер ссылок.** В API восемь справочников (`genres`, `labels`, `countries`, `studios`, `jobs`, `kind`, `rewards`, `seo`). Вместо стора на каждый справочник — один стор `metadata`, который загружает справочник по префиксу `oid`, и рекурсивный резолвер, который проходит по любому ответу и заменяет строки вида `тип:id` объектами. Тогда новая страница или новый справочник не потребуют правок маппера.
-- **Прокси к API через серверные маршруты Nitro** (`/api/**` → стенд). Это решает проблему CORS в SPA-режиме, прячет адрес стенда и позволяет кешировать справочники на сервере.
-- **Обработка ошибок и состояния загрузки.** Показывать `error` из `useAsyncData` и сбрасывать `loading` в сторах через `try/finally`. Сейчас, если запрос справочника упадёт мимо фолбэка, стор останется в состоянии `loading`.
-- **Параллельная загрузка справочников** через `Promise.all` вместо двух последовательных `await`.
-- **Строгая типизация маппера.** Сейчас он принимает `any`, поэтому TypeScript не заметил, что поле `Banner.url` не заполняется, а `filter(Boolean)` оставляет в типе `null`.
-- **Ссылки карточек.** В ответе API есть `url` фильма или сериала, но все карточки ведут на `/`. Нужны страницы контента.
-- **Метки с градиентом.** API отдаёт для меток цвета `left_color` / `center_color` / `right_color`, а сейчас метки рисуются простой рамкой.
-- **Стили.** В `assets/css/main.css` синтаксис Tailwind 4 (`@import "tailwindcss"`), а подключён Tailwind 3, и файл нигде не используется. Классы `w-250` / `h-200` существуют только в Tailwind 4, поэтому на вёрстку не влияют.
-- **SEO и доступность.** `<title>`, `lang`, мета-описание.
-- **Тесты.** Юнит-тесты маппера и сторов на данных снапшота.
+- **A universal reference resolver.** The API has eight lookup tables (`genres`, `labels`, `countries`, `studios`, `jobs`, `kind`, `rewards`, `seo`). Instead of one store per table: a single `metadata` store that loads a table by the `oid` prefix, and a recursive resolver that walks any response and replaces `type:id` strings with objects. Then a new page or a new lookup table would not require changes to the mapper.
+- **An API proxy through Nitro server routes** (`/api/**` → the test server). This fixes CORS in SPA mode, hides the upstream URL and allows caching lookup tables on the server.
+- **Error and loading states.** Show `error` from `useAsyncData` and reset `loading` in the stores with `try/finally`. At the moment, if a lookup request fails without reaching the fallback, the store stays in the `loading` state.
+- **Parallel loading of lookup tables** with `Promise.all` instead of two sequential `await`s.
+- **Strict typing in the mapper.** It currently accepts `any`, so TypeScript did not catch that `Banner.url` is never filled and that `filter(Boolean)` leaves `null` in the type.
+- **Card links.** The API response includes the movie or series `url`, but every card links to `/`. Content pages are needed.
+- **Gradient labels.** The API provides `left_color` / `center_color` / `right_color` for labels, but they are currently rendered with a plain border.
+- **Styles.** `assets/css/main.css` uses Tailwind 4 syntax (`@import "tailwindcss"`) while Tailwind 3 is installed, and the file is not included anywhere. The `w-250` / `h-200` classes exist only in Tailwind 4, so they have no effect on the layout.
+- **SEO and accessibility.** `<title>`, `lang`, meta description.
+- **Tests.** Unit tests for the mapper and stores using the snapshot data.
